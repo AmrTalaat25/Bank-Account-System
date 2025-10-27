@@ -27,6 +27,15 @@ string? choice = Console.ReadLine();
         case "3":
             WithdrawService.Withdraw(accounts);
             break;
+        case "4":
+            ShowBalanceService.ShowBalance(accounts);
+            break;
+        case "5":
+            Console.WriteLine("Exit !");
+            break;
+        default:
+            Console.WriteLine("Invalaid Option !!!");
+            break;
     }
 }
 
