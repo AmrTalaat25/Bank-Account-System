@@ -22,7 +22,7 @@ string? choice = Console.ReadLine();
             break;
 
         case "2":
-            ProcessInAccount.Deposit(accounts);
+            DepositService.Deposit(accounts);
             break;
     }
 }
