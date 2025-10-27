@@ -24,6 +24,9 @@ string? choice = Console.ReadLine();
         case "2":
             DepositService.Deposit(accounts);
             break;
+        case "3":
+            WithdrawService.Withdraw(accounts);
+            break;
     }
 }
 

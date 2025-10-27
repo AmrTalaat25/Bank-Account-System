@@ -17,9 +17,13 @@ public static class DepositService
         double amount =double.Parse(Console.ReadLine()); 
         if (amount < 0)
             Console.WriteLine("Amount must be positive");
+        else
+        {
+            account.Balance += amount;
+            Console.WriteLine($" Deposited {amount}. New balance: {account.Balance}");
+        }
 
-        account.Balance+=amount;
-        Console.WriteLine($" Deposited {amount}. New balance: {account.Balance}");
+
 
     }
 }
